@@ -1,10 +1,3 @@
 function addLength(str) {
-  let words = str.split(" ");
-  let word_len = [];
-  
-  for (let i = 0; i < words.length; i++) {
-    word_len.push(words[i] + " " + words[i].length);
-  }
-  
-  return word_len;
+  return str.split(" ").map(word => `${word} ${word.length}`);
 }
